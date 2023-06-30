@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="navy" text="white">
+    <center>
+
+    <h3>running time in javascript</h3>
+    <div id="time"></div>
+    
+    <script>
+        // var today=new Date();
+        // document.write(today)
+
+
+        // var today=new Date();
+        // var Day=today.getDate();
+        // var Month=today.getMonth()+1;
+        // var Year=today.getFullYear();
+        // document.write(Day+"/"+Month+"/"+Year)
+
+
+        // var today=new Date();
+        // var h=today.getHours();
+        // var m=today.getMinutes();
+        // var s=today.getSeconds();
+        // document.write(h+":"+m+":"+s)
+
+
+
+        function getTime(){
+            var today=new Date();
+            var h=today.getHours();
+            var m=today.getMinutes();
+            var s=today.getSeconds();
+            document.getElementById("time").innerHTML=h+":"+m+":"+s;
+
+            setInterval("getTime()",1000)
+
+
+        }
+        getTime();
+
+
+
+    </script>
+    </center>
+ 
+    
+</body>
+</html>

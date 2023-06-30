@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var students={
+        //     rollno:101,
+        //     name:"sathish",
+        //     age:24,
+        //     address:"hyderabad"
+        // }
+
+        // console.log(students.age)
+
+
+
+        function user(roll,name,age,address){
+            this.roll=roll;
+            this.name=name;
+            this.age=age;
+            this.address=address
+        }
+
+        var student1=new user(101,"sai",25,"hyderabad")
+        console.log(student1)
+        student1.marks=200
+        console.log(student1)
+        student1["class"]="btech"
+        console.log(student1)
+    </script>
+    
+</body>
+</html>
